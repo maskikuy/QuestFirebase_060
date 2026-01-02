@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "812982989598",
+    "project_id": "myfirebasesiswa-a192a",
+    "storage_bucket": "myfirebasesiswa-a192a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:812982989598:android:61267762d8dd8590b28f0f",
+        "android_client_info": {
+          "package_name": "com.example.questfirebase_060"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3ryDxU5e4B5lO38SRx179KEERoIxFmmc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
