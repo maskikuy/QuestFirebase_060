@@ -1,6 +1,7 @@
 package repositori
 
 import com.google.firebase.firestore.FirebaseFirestore
+import kotlinx.coroutines.tasks.await
 import modeldata.Siswa
 
 
