@@ -36,12 +36,12 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.davin.questfirebase_075.R
-import com.davin.questfirebase_075.modeldata.Siswa
-import com.davin.questfirebase_075.view.route.DestinasiHome
-import com.davin.questfirebase_075.viewmodel.HomeViewModel
-import com.davin.questfirebase_075.viewmodel.PenyediaViewModel
-import com.davin.questfirebase_075.viewmodel.StatusUiSiswa
+import com.example.questfirebase_060.R
+import modeldata.Siswa
+import view.Route.DestinasiHome
+import view.ViewModel.HomeViewModel
+import view.ViewModel.StatusUiSiswa
+import view.viewmodel.PenyediaViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
