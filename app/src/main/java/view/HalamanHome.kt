@@ -129,7 +129,6 @@ fun ErrorScreen(retryAction: () -> Unit, modifier: Modifier = Modifier) {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        // --- BAGIAN YANG DIUBAH (Hapus Image, Ganti Icon) ---
         androidx.compose.material3.Icon(
             imageVector = androidx.compose.material.icons.Icons.Default.Warning,
             contentDescription = null,

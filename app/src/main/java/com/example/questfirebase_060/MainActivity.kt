@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.questfirebase_060.ui.theme.QuestFirebase_060Theme
+import view.ControlNavigasi.DataSiswaApp
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,8 +21,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             QuestFirebase_060Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                    // Pastikan composable DataSiswaApp sudah dibuat (biasanya berisi NavHost)
+                    DataSiswaApp(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
