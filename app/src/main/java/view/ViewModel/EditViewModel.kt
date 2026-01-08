@@ -10,6 +10,7 @@ import kotlinx.coroutines.launch
 import modeldata.DetailSiswa
 import modeldata.UIStateSiswa
 import modeldata.toDataSiswa
+import modeldata.toUiStateSiswa
 import repositori.RepositorySiswa
 import view.Route.DestinasiDetail
 

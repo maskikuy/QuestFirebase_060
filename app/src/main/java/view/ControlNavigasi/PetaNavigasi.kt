@@ -8,6 +8,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import view.DetailScreen
 import view.EditSiswaScreen
 import view.EntrySiswaScreen
 import view.HomeScreen
@@ -25,6 +26,7 @@ fun DataSiswaApp(
     HostNavigasi(navController = navController)
 }
 
+@Composable
 fun HostNavigasi(
     navController: NavHostController,
     modifier: Modifier = Modifier
@@ -47,7 +49,7 @@ fun HostNavigasi(
                 type = NavType.StringType
             })
         ) {
-            DetailSiswaScreen(
+            DetailScreen(
                 navigateToEditItem = { navController.navigate("${DestinasiEdit.route}/$it") },
                 navigateBack = { navController.navigate(DestinasiHome.route) }
             )
