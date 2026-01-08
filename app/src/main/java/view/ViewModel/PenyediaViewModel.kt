@@ -1,10 +1,13 @@
 package view.viewmodel
 
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.createSavedStateHandle
 import androidx.lifecycle.viewmodel.CreationExtras
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import repositori.AplikasiDataSiswa
+import view.ViewModel.DetailViewModel
+import view.ViewModel.EditViewModel
 import view.ViewModel.EntryViewModel
 import view.ViewModel.HomeViewModel
 
@@ -15,5 +18,30 @@ object PenyediaViewModel {
     val Factory = viewModelFactory {
         initializer { HomeViewModel(aplikasiDataSiswa().container.repositorySiswa) }
         initializer { EntryViewModel(aplikasiDataSiswa().container.repositorySiswa) }
+        initializer {
+            HomeViewModel(aplikasiDataSiswa().container.repositorySiswa)
+        }
+
+        // Initializer untuk EntryViewModel
+        initializer {
+            EntryViewModel(aplikasiDataSiswa().container.repositorySiswa)
+        }
+
+        // Initializer untuk DetailViewModel (memerlukan SavedStateHandle untuk navigasi ID)
+        initializer {
+            DetailViewModel(
+                this.createSavedStateHandle(),
+                aplikasiDataSiswa().container.repositorySiswa
+            )
+        }
+
+        // Initializer untuk EditViewModel (memerlukan SavedStateHandle untuk navigasi ID)
+        initializer {
+            EditViewModel(
+                this.createSavedStateHandle(),
+                aplikasiDataSiswa().container.repositorySiswa
+            )
+        }
     }
+
 }
