@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "812982989598",
-    "project_id": "myfirebasesiswa-a192a",
-    "storage_bucket": "myfirebasesiswa-a192a.firebasestorage.app"
+    "project_number": "1044607170140",
+    "project_id": "questfirebase-577da",
+    "storage_bucket": "questfirebase-577da.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:812982989598:android:61267762d8dd8590b28f0f",
+        "mobilesdk_app_id": "1:1044607170140:android:d9a02eb67255ec55c5d899",
         "android_client_info": {
           "package_name": "com.example.questfirebase_060"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyB3ryDxU5e4B5lO38SRx179KEERoIxFmmc"
+          "current_key": "AIzaSyBqOkmiSYbEErxx3wibX52Mtu8MWU8CqWI"
         }
       ],
       "services": {
